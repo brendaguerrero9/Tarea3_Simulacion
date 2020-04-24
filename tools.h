@@ -40,7 +40,7 @@ void leerMallayCondiciones(mesh &m){
     file >> E >> A >> F;
     file >> nnodes >> neltos >> ndirich >> nneu;
 
-    m.setParameters(F,A,F);
+    m.setParameters(E,A,F);
     m.setSizes(nnodes,neltos,ndirich,nneu);
     m.createData();
 
