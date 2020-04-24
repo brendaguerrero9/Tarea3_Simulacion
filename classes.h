@@ -1,6 +1,6 @@
 enum lines {NOLINE,SINGLELINE,DOUBLELINE};
 enum modes {NOMODE,INT_FLOAT,INT_INT_INT};
-enum parameters {CONSTANT_A,CONSTANT_E,CONSTANT_F};
+enum parameters {CONSTANT_E,CONSTANT_A,CONSTANT_F};
 enum sizes {NODES,ELEMENTS,DIRICHLET,NEUMANN};
 
 class item{
