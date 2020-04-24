@@ -17,11 +17,11 @@ Matrix createLocalK(int element,mesh &m){
 
 Vector createLocalb(int element,mesh &m){
     Vector b;
-    float F = m.getParameter(CONSTANT_F),
+    float f = m.getParameter(CONSTANT_F),
     l = m.getNode(element+1).getX() - m.getNode(element).getX();
     
-    b.push_back(-(F*l)/2); 
-    b.push_back(-(F*l)/2);
+    b.push_back(-(f*l)/2); 
+    b.push_back(-(f*l)/2);
     
     return b;
 }
